@@ -21,7 +21,7 @@ Nuestro tema de hoy, la *transcriptómica*, es clave porque actúa como un puent
 
 * Descubrir nuevas variantes de transcritos o patrones de regulación específicos.
 
-### "Pipeline" de análisis de transcriptomas 
+### I. "Pipeline" básico de transcriptómica
 
 #### 0. Secuenciación de ARN.
 * Se obtiene la secuencia de nucleótidos (bases: A, U, C, G) de los fragmentos de ARN convertidos en ADNc.
@@ -66,4 +66,23 @@ Nuestro tema de hoy, la *transcriptómica*, es clave porque actúa como un puent
 * Se realizan comparaciones entre grupos de muestras. 
 * **Producto:** una lista de genes diferencialmente expresados con sus valores de cambio de expresión (log2FoldChange) y significancia estadística (p-ajustada).
 * Los genes con mayor expresión en la condición experimental se clasifican como upregulated (inducidos) y los de menor expresión como downregulated (reprimidos).
+
+### Visualización de resultados transcriptómicos. 
+
+En estudios de transcriptómica, como el caso de maíz sano (Control, C) vs maíz inoculado con Colletotrichum graminicola (Tratamiento, T), una vez obtenidos los genes diferencialmente expresados, el siguiente paso es visualizar e interpretar esos resultados.
+
+La visualización es clave porque:
+* Permite identificar patrones globales de expresión.
+
+* Ayuda a comprender el comportambiento de los datos. 
+
+* Facilita la interpretación biológica al conectar los cambios en la expresión con procesos celulares y rutas metabólicas.
+
+Existen muchas representaciones gráficas posibles: volcano plots, heatmaps, análisis de enriquecimiento (GO/KEGG), redes de interacción, entre otros. Cada una ofrece una perspectiva distinta de los datos. Para esta sesión, nos enfocaremos en tres visualizaciones fundamentales:
+
+* **PCA (Análisis de Componentes Principales):** permite ver si las muestras se separan según la condición (C vs T).
+
+* **Heatmap (mapa de calor):** muestra los genes más variables o diferencialmente expresados y cómo se agrupan las muestras en función de su expresión.
+
+* **COG (Clusters de grupos ortólogos):** clasifica genes diferencialmente expresados en categorías funcionales, para analizar qué procesos biológicos son más afectadados por el factor de estudio.
 
