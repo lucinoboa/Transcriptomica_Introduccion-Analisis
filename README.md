@@ -72,15 +72,15 @@ El caso de la clase de hoy será la comparación entre maíz sano (Control, C) v
 
 Existen muchas representaciones gráficas posibles: volcano plots, heatmaps, análisis de enriquecimiento (GO/KEGG), redes de interacción, entre otros. Cada una ofrece una perspectiva distinta de los datos. Para esta sesión, nos enfocaremos en tres visualizaciones básicas:
 
-* 1. **PCA (Análisis de Componentes Principales):** permite ver si las muestras se separan según la condición (C vs T).
+** 1.PCA (Análisis de Componentes Principales): ** permite ver si las muestras se separan según la condición (C vs T).
 
  ![PCA](PCA.png)
 
-** 2. Diagrama de Venn**: son herramientas visuales que muestran la relación entre diferentes conjuntos de genes, por ejemplo, genes sobreexpresados o subexpresados en distintas condiciones o genotipos. La intersección de genes representa cuántos genes son compartidos entre condiciones y, por el contrario, la exclusividad demuestra cuántos genes son específicos de una condición. 
+** 2. Diagrama de Venn: ** son herramientas visuales que muestran la relación entre diferentes conjuntos de genes, por ejemplo, genes sobreexpresados o subexpresados en distintas condiciones o genotipos. La intersección de genes representa cuántos genes son compartidos entre condiciones y, por el contrario, la exclusividad demuestra cuántos genes son específicos de una condición. 
 
 ![Venn](_venn.png)
 
-** 3. Heatmap (mapa de calor):** muestra los genes más variables o diferencialmente expresados y cómo se agrupan las muestras en función de su expresión.
+** 3. Heatmap (mapa de calor): ** muestra los genes más variables o diferencialmente expresados y cómo se agrupan las muestras en función de su expresión.
 
 ![Heatmap](_heatmap.png)
 
