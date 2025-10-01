@@ -72,19 +72,19 @@ El caso de la clase de hoy será la comparación entre maíz sano (Control, C) v
 
 Existen muchas representaciones gráficas posibles: volcano plots, heatmaps, análisis de enriquecimiento (GO/KEGG), redes de interacción, entre otros. Cada una ofrece una perspectiva distinta de los datos. Para esta sesión, nos enfocaremos en tres visualizaciones básicas:
 
-** 1.PCA (Análisis de Componentes Principales): ** permite ver si las muestras se separan según la condición (C vs T).
+##### 1.PCA (Análisis de Componentes Principales): 
+Permite visualizar si las muestras se separan según la condición (C vs T) e identificar posibles muestras con comportamientos atípicos.
 
  ![PCA](PCA.png)
 
-** 2. Diagrama de Venn: ** son herramientas visuales que muestran la relación entre diferentes conjuntos de genes, por ejemplo, genes sobreexpresados o subexpresados en distintas condiciones o genotipos. La intersección de genes representa cuántos genes son compartidos entre condiciones y, por el contrario, la exclusividad demuestra cuántos genes son específicos de una condición. 
+##### 2. Diagrama de Venn 
+Es una herramienta visual que muestra la relación entre diferentes conjuntos de genes, por ejemplo, genes sobreexpresados o subexpresados en distintas condiciones o genotipos. La intersección de genes representa cuántos genes son compartidos entre condiciones y, por el contrario, la exclusividad demuestra cuántos genes son específicos de una condición. 
 
 ![Venn](_venn.png)
 
-** 3. Heatmap (mapa de calor): ** muestra los genes más variables o diferencialmente expresados y cómo se agrupan las muestras en función de su expresión.
-
-![Heatmap](_heatmap.png)
-
+##### 3. Heatmap (mapa de calor)
+Muestra los genes más variables o diferencialmente expresados y cómo se agrupan las muestras en función de su expresión.
 Los genes del heatmap se pueden consultar en el sitio web del NCBI, donde viene la información de su nombre común. Estos datos se pueden complementar con la revisión de literatura, con el fin de predecir el rol de los genes en la respuesta inducida que se está evaluando. 
 [Enlace para consultar genes en NCBI](https://www.ncbi.nlm.nih.gov/gene/)
 
-
+![Heatmap](_heatmap.png)
