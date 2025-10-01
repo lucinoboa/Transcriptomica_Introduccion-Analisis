@@ -76,11 +76,15 @@ Existen muchas representaciones gráficas posibles: volcano plots, heatmaps, an�
 
  ![PCA](PCA.png)
 
-** 2. Heatmap (mapa de calor):** muestra los genes más variables o diferencialmente expresados y cómo se agrupan las muestras en función de su expresión.
+** 2. Diagrama de Venn**: son herramientas visuales que muestran la relación entre diferentes conjuntos de genes, por ejemplo, genes sobreexpresados o subexpresados en distintas condiciones o genotipos. La intersección de genes representa cuántos genes son compartidos entre condiciones y, por el contrario, la exclusividad demuestra cuántos genes son específicos de una condición. 
+
+![Venn](_venn.png)
+
+** 3. Heatmap (mapa de calor):** muestra los genes más variables o diferencialmente expresados y cómo se agrupan las muestras en función de su expresión.
 
 ![Heatmap](_heatmap.png)
 
 Los genes del heatmap se pueden consultar en el sitio web del NCBI, donde viene la información de su nombre común. Estos datos se pueden complementar con la revisión de literatura, con el fin de predecir el rol de los genes en la respuesta inducida que se está evaluando. 
-[Consultar genes en NCBI](https://www.ncbi.nlm.nih.gov/gene/)
+[Enlace para consultar genes en NCBI](https://www.ncbi.nlm.nih.gov/gene/)
 
 
