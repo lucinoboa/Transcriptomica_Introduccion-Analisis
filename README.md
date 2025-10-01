@@ -4,24 +4,22 @@ Esta es una guía básica para la interpretación de datos de transcriptómica d
 Las ciencias ómicas son ramas de la biología que estudian, de manera integral, los distintos niveles de información en los organismos. Su enfoque es global, es decir, no analizan un solo gen, proteína o metabolito, sino todos los componentes al mismo tiempo para entender cómo funcionan en conjunto.
 
 * Genómica: estudia la estructura, función, evolución y mapeo de los genomas completos de un organismo.
-
 * Transcriptómica: analiza el conjunto total de ARN mensajeros (transcriptoma) que se producen bajo ciertas condiciones, como una infección o un estrés ambiental. Refleja qué genes están activos y en qué medida.
-
 * Proteómica: se centra en las proteínas producidas, su abundancia, propiedades bioquímicas y roles funcionales en la célula.
-
 * Metabolómica: examina los metabolitos, que son los productos de los procesos celulares, permitiendo entender el estado fisiológico del organismo.
+
+![omicas](omicas.png)
 
 ## Transcriptómica 
 
 Nuestro tema de hoy, la *transcriptómica*, es clave porque actúa como un puente entre el genoma y el fenotipo. Mientras que el ADN representa el potencial genético, el transcriptoma muestra qué genes están realmente en uso en un momento dado. Mediante técnicas como RNA-seq, podemos medir cuántas copias de ARN mensajero se producen para cada gen y esto permite: 
-
 * Identificar genes inducidos durante una respuesta (por ejemplo, genes de defensa en plantas infectadas).
-
 * Reconocer genes reprimidos cuando la célula redirige su energía a otros procesos.
-
 * Descubrir nuevas variantes de transcritos o patrones de regulación específicos.
 
 ### I. "Pipeline" básico de transcriptómica
+
+ ![pipeline](_pipeline.png)
 
 #### 0. Secuenciación de ARN.
 * Se obtiene la secuencia de nucleótidos (bases: A, U, C, G) de los fragmentos de ARN convertidos en ADNc.
@@ -67,22 +65,25 @@ Nuestro tema de hoy, la *transcriptómica*, es clave porque actúa como un puent
 * **Producto:** una lista de genes diferencialmente expresados con sus valores de cambio de expresión (log2FoldChange) y significancia estadística (p-ajustada).
 * Los genes con mayor expresión en la condición experimental se clasifican como upregulated (inducidos) y los de menor expresión como downregulated (reprimidos).
 
-### Visualización de resultados transcriptómicos. 
+### Visualización de resultados transcriptómicos
 
-En estudios de transcriptómica, como el caso de maíz sano (Control, C) vs maíz inoculado con Colletotrichum graminicola (Tratamiento, T), una vez obtenidos los genes diferencialmente expresados, el siguiente paso es visualizar e interpretar esos resultados.
-
-La visualización es clave porque:
-* Permite identificar patrones globales de expresión.
-
-* Ayuda a comprender el comportambiento de los datos. 
-
-* Facilita la interpretación biológica al conectar los cambios en la expresión con procesos celulares y rutas metabólicas.
+En estudios de transcriptómica, una vez obtenidos los genes diferencialmente expresados, el siguiente paso es visualizar e interpretar esos resultados. 
+El caso de la clase de hoy será la comparación entre maíz sano (Control, C) vs maíz inoculado con _Colletotrichum graminicola_ (Tratamiento, T). 
 
 Existen muchas representaciones gráficas posibles: volcano plots, heatmaps, análisis de enriquecimiento (GO/KEGG), redes de interacción, entre otros. Cada una ofrece una perspectiva distinta de los datos. Para esta sesión, nos enfocaremos en tres visualizaciones fundamentales:
 
-* **PCA (Análisis de Componentes Principales):** permite ver si las muestras se separan según la condición (C vs T).
+* 1. **PCA (Análisis de Componentes Principales):** permite ver si las muestras se separan según la condición (C vs T).
+
+ ![PCA](PCA.png)
 
 * **Heatmap (mapa de calor):** muestra los genes más variables o diferencialmente expresados y cómo se agrupan las muestras en función de su expresión.
 
-* **COG (Clusters de grupos ortólogos):** clasifica genes diferencialmente expresados en categorías funcionales, para analizar qué procesos biológicos son más afectadados por el factor de estudio.
+![Heatmap](_heatmap.png)
 
+[Consultar genes en NCBI](https://www.ncbi.nlm.nih.gov/gene/)
+
+
+* **COG (Clusters de grupos ortólogos):** clasifica genes diferencialmente expresados en categorías funcionales, para analizar qué procesos biológicos son más afectadados por el factor de estudio.
+![universe](universo.png)
+
+![COG](_COG.png)
