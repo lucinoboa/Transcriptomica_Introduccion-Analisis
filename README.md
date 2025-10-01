@@ -70,20 +70,17 @@ Nuestro tema de hoy, la *transcriptómica*, es clave porque actúa como un puent
 En estudios de transcriptómica, una vez obtenidos los genes diferencialmente expresados, el siguiente paso es visualizar e interpretar esos resultados. 
 El caso de la clase de hoy será la comparación entre maíz sano (Control, C) vs maíz inoculado con _Colletotrichum graminicola_ (Tratamiento, T). 
 
-Existen muchas representaciones gráficas posibles: volcano plots, heatmaps, análisis de enriquecimiento (GO/KEGG), redes de interacción, entre otros. Cada una ofrece una perspectiva distinta de los datos. Para esta sesión, nos enfocaremos en tres visualizaciones fundamentales:
+Existen muchas representaciones gráficas posibles: volcano plots, heatmaps, análisis de enriquecimiento (GO/KEGG), redes de interacción, entre otros. Cada una ofrece una perspectiva distinta de los datos. Para esta sesión, nos enfocaremos en tres visualizaciones básicas:
 
 * 1. **PCA (Análisis de Componentes Principales):** permite ver si las muestras se separan según la condición (C vs T).
 
  ![PCA](PCA.png)
 
-* **Heatmap (mapa de calor):** muestra los genes más variables o diferencialmente expresados y cómo se agrupan las muestras en función de su expresión.
+** 2. Heatmap (mapa de calor):** muestra los genes más variables o diferencialmente expresados y cómo se agrupan las muestras en función de su expresión.
 
 ![Heatmap](_heatmap.png)
 
+Los genes del heatmap se pueden consultar en el sitio web del NCBI, donde viene la información de su nombre común. Estos datos se pueden complementar con la revisión de literatura, con el fin de predecir el rol de los genes en la respuesta inducida que se está evaluando. 
 [Consultar genes en NCBI](https://www.ncbi.nlm.nih.gov/gene/)
 
 
-* **COG (Clusters de grupos ortólogos):** clasifica genes diferencialmente expresados en categorías funcionales, para analizar qué procesos biológicos son más afectadados por el factor de estudio.
-![universe](universo.png)
-
-![COG](_COG.png)
